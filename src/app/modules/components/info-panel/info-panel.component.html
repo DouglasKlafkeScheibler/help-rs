@@ -1,0 +1,8 @@
+<h2> {{title}} </h2>
+<ul>
+    <li *ngFor="let tip of arrayTips | async">
+        <button (click)="goToLinkOrDialog(tip.link, tip.dialog)">
+            <b>{{tip.description}}</b>
+        </button>
+    </li>
+</ul>

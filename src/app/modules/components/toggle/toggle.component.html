@@ -1,0 +1,16 @@
+<div class="toggle-buttons">
+    <button
+      class="button-green"
+      [class.active]="isGreenActive"
+      (click)="toggle(true)"
+    >
+    Quero Ajudar
+    </button>
+    <button
+      class="button-red"
+      [class.active]="!isGreenActive"
+      (click)="toggle(false)"
+    >
+    Preciso de Ajuda
+    </button>
+</div>

@@ -1,0 +1,10 @@
+<h2 mat-dialog-title> {{title}} </h2>
+<mat-dialog-content>
+    <ul>
+        <li *ngFor="let tip of arrayDialog | async">
+            <button (click)="goToLink(tip.link)">
+                <b>{{tip.description}}</b>
+            </button>
+        </li>
+    </ul>
+</mat-dialog-content>

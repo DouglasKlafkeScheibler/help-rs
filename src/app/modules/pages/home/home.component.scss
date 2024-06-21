@@ -1,0 +1,26 @@
+.rectangles {
+    display: flex;
+}
+
+.rectangle {
+    height: 4px;
+}
+
+.rectangle-green {
+    width: 64px;
+    background: #009334;
+}
+
+.rectangle-red {
+    width: 64px;
+    background: #DB2017;
+}
+
+.rectangle-yellow {
+    width: 64px;
+    background: #F8C60F;
+}
+
+p {
+    padding: 0 50px 0 50px;
+}

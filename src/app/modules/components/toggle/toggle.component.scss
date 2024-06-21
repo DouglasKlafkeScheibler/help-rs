@@ -1,0 +1,39 @@
+.toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 24px 50px 0 50px;
+}
+  
+  .toggle-buttons button {
+    flex: 1;
+    padding: 8px 16px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .button-green {
+    background: #009334;
+    box-shadow: 0px 4px 19px 0px rgba(0, 147, 52, 0.50);
+  }
+  
+  .button-red {
+    background: #DB2017;
+    box-shadow: 0px 4px 19px 0px rgba(219, 32, 23, 0.50);
+  }
+  
+  .button-green.active,
+  .button-red.active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-green:not(.active),
+  .button-red:not(.active) {
+    opacity: 0.6;
+  }

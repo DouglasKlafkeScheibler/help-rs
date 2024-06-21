@@ -1,0 +1,24 @@
+<h1>Rede de 
+    AJUDA - RS
+</h1>
+
+<div class="rectangles">
+    <div class="rectangle rectangle-green"></div>
+    <div class="rectangle rectangle-red"></div>
+    <div class="rectangle rectangle-yellow"></div>
+</div>
+
+<p>Encontre aqui informações para ajuda  ao Rio Grande do Sul no pós enchente.</p>
+
+
+<app-toggle (toggleChange)="onToggleChange($event)"></app-toggle>
+
+<ng-container *ngIf="toggleIsGreen; else needHelp">
+    <!-- componente 1 -->
+</ng-container>
+  
+<ng-template #needHelp>
+    <app-need-help></app-need-help>
+</ng-template>
+
+
