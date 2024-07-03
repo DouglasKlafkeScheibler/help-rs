@@ -4,11 +4,11 @@ import { arrayOrientacoesCuidadosSaudeDialog } from "./arrayOrientacoesCuidadosS
 
 export const arrayOrientacoes = of([
     {
-        description: "Meus direitos",
+        description: "⚖ Meus direitos",
         dialog: arrayOrientacoesMeusDireitosDialog,
     },
     {
-        description: 'Cuidados com a saúde',
+        description: '😷 Cuidados com a saúde',
         dialog: arrayOrientacoesCuidadosSaudeDialog,
     },
 ])

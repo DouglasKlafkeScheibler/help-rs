@@ -1,24 +1,29 @@
-<h1>Rede de 
-    AJUDA - RS
-</h1>
-
-<div class="rectangles">
-    <div class="rectangle rectangle-green"></div>
-    <div class="rectangle rectangle-red"></div>
-    <div class="rectangle rectangle-yellow"></div>
-</div>
+<header>
+    <h1>Rede de AJUDA - RS</h1>
+    
+    <div class="rectangles">
+        <div class="rectangle rectangle-green"></div>
+        <div class="rectangle rectangle-red"></div>
+        <div class="rectangle rectangle-yellow"></div>
+    </div>
+</header>
 
 <p>Encontre aqui informações para ajuda  ao Rio Grande do Sul no pós enchente.</p>
 
+<app-toggle 
+    (toggleChange)="onToggleChange($event)"
+    [greenTitle]="'Quero Ajudar'"
+    [redTitle]="'Precido de Ajuda'">
+</app-toggle>
 
-<app-toggle (toggleChange)="onToggleChange($event)"></app-toggle>
+<p>Pequenas atitudes pode mudar a vida de alguém! Faça parte deste movimento solidário.</p>
 
 <ng-container *ngIf="toggleIsGreen; else needHelp">
-    <!-- componente 1 -->
+    <app-wanna-help></app-wanna-help>
 </ng-container>
   
 <ng-template #needHelp>
     <app-need-help></app-need-help>
 </ng-template>
 
-
+<div class="footer"></div>

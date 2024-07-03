@@ -1,25 +1,28 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NeedHelpComponent } from '../../components/need-help/need-help.component';
 import { ToggleComponent } from '../../components/toggle/toggle.component';
-import { WannaHelpComponent } from '../../components/wanna-help/wanna-help.component';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-wanna-volunteer',
   standalone: true,
   imports: [
     CommonModule,
     ToggleComponent,
-    NeedHelpComponent,
-    WannaHelpComponent,
   ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  templateUrl: './wanna-volunteer.component.html',
+  styleUrl: './wanna-volunteer.component.scss'
 })
-export class HomeComponent {
+export class WannaVolunteerComponent {
   toggleIsGreen: boolean = true;
+
+  constructor(private router: Router) { }
 
   onToggleChange(newState: boolean): void {
     this.toggleIsGreen = newState;
+  }
+
+  goBack() {
+    this.router.navigate(['../']);
   }
 }

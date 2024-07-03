@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-toggle',
@@ -12,6 +12,8 @@ export class ToggleComponent {
   isGreenActive: boolean = true;
 
   @Output() toggleChange = new EventEmitter<boolean>();
+  @Input() greenTitle: any;
+  @Input() redTitle: any;
 
   toggle(isGreen: boolean): void {
     this.isGreenActive = isGreen;

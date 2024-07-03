@@ -4,13 +4,13 @@
       [class.active]="isGreenActive"
       (click)="toggle(true)"
     >
-    Quero Ajudar
+    {{greenTitle}}
     </button>
     <button
       class="button-red"
       [class.active]="!isGreenActive"
       (click)="toggle(false)"
     >
-    Preciso de Ajuda
+    {{redTitle}}
     </button>
 </div>

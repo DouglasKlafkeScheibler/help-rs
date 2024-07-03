@@ -1,0 +1,20 @@
+<button (click)="goBack()">Voltar</button>
+<header>
+    <h1>Quero ser voluntário</h1>
+    
+    <div class="rectangles">
+        <div class="rectangle rectangle-green"></div>
+        <div class="rectangle rectangle-red"></div>
+        <div class="rectangle rectangle-yellow"></div>
+    </div>
+</header>
+
+<p>Ajude como puder de onde quiser.</p>
+
+<app-toggle 
+    (toggleChange)="onToggleChange($event)"
+    [greenTitle]="'Remoto'"
+    [redTitle]="'Presencial'">
+</app-toggle>
+
+<p>Pequenas atitudes pode mudar a vida de alguém! Faça parte deste movimento solidário.</p>

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-info-panel',
@@ -16,14 +17,19 @@ export class InfoPanelComponent {
   @Input() title: any;
   @Input() arrayTips: any;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    private router: Router
+  ) {}
 
-  goToLinkOrDialog(link: string, dialog: any) {
+  goToLinkOrDialog(link: string, dialog: any, path: string) {
     if (dialog) {
       this.openDialog(dialog)
     } else if (link) {
       const url = new URL(link);
       window.open(url.href);
+    } else if (path) {
+      this.router.navigate([path]);
     }
   }
 
