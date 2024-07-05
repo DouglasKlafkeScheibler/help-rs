@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ToggleComponent } from '../../components/toggle/toggle.component';
 import { Router } from '@angular/router';
+import { ToggleComponent } from '../../components/toggle/toggle.component';
+import { WannaVolunteerRemoteComponent } from '../../components/wanna-volunteer-remote/wanna-volunteer-remote.component';
+import { WannaVolunteerInPersonComponent } from '../../components/wanna-volunteer-in-person/wanna-volunteer-in-person.component';
 
 @Component({
   selector: 'app-wanna-volunteer',
@@ -9,6 +11,8 @@ import { Router } from '@angular/router';
   imports: [
     CommonModule,
     ToggleComponent,
+    WannaVolunteerRemoteComponent,
+    WannaVolunteerInPersonComponent,
   ],
   templateUrl: './wanna-volunteer.component.html',
   styleUrl: './wanna-volunteer.component.scss'

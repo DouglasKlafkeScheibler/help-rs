@@ -18,3 +18,11 @@
 </app-toggle>
 
 <p>Pequenas atitudes pode mudar a vida de alguém! Faça parte deste movimento solidário.</p>
+
+<ng-container *ngIf="toggleIsGreen; else inPerson">
+    <app-wanna-volunteer-remote></app-wanna-volunteer-remote>
+</ng-container>
+  
+<ng-template #inPerson>
+    <app-wanna-volunteer-in-person></app-wanna-volunteer-in-person>
+</ng-template>
