@@ -13,5 +13,6 @@ export const arrayProfissionais = of([
     {
         description: "🫂 Voluntário Psicólogo",
         dialog: arrayProfissionaisVoluntarioPsicologoDialog,
+        largeButton: true
     },
 ])

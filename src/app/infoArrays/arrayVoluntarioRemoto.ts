@@ -12,5 +12,6 @@ export const arrayVoluntarioRemoto = of([
     {
         description: "🆘 Ajude nos Resgates",
         link: "https://docs.google.com/forms/d/e/1FAIpQLSd5FY640kNUR9JMnbXiZYAq2BiHRs9ePPl1hw7Jbu8p1w3jIw/viewform",
+        largeButton: true
     },
 ])

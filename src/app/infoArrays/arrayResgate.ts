@@ -12,5 +12,6 @@ export const arrayResgate = of([
     {
         description: "🫂 Encontrar Resgatados",
         link: "https://www.instagram.com/p/C6rUi0KONzz/?img_index=1",
+        largeButton: true
     },
 ])

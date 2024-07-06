@@ -1,12 +1,11 @@
 import { of } from "rxjs";
-import { arrayNecessidadesPrecisoAbrigoDialog } from "./arrayNecessidadesPrecisoAbrigoDialog";
-import { arrayNecessidadesReconstruirLarDialog } from "./arrayNecessidadesReconstruirLarDialog";
 import { arrayNecessidadesAguaPotavelDialog } from "./arrayNecessidadesAguaPotavelDialog";
-import { arrayNecessidadesRefeicaoQuentinhaDialog } from "./arrayNecessidadesRefeicaoQuentinhaDialog";
+import { arrayNecessidadesApoioPsicologicoDialog } from "./arrayNecessidadesApoioPsicologicoDialog";
 import { arrayNecessidadesAtendimentoMedicoDialog } from "./arrayNecessidadesAtendimentoMedicoDialog";
 import { arrayNecessidadesCuidadosPetDialog } from "./arrayNecessidadesCuidadosPetDialog";
-import { arrayNecessidadesApoioPsicologicoDialog } from "./arrayNecessidadesApoioPsicologicoDialog";
-import { arrayNecessidadesPrecisoMedicacaoDialog } from "./arrayNecessidadesPrecisoMedicacaoDialog";
+import { arrayNecessidadesPrecisoAbrigoDialog } from "./arrayNecessidadesPrecisoAbrigoDialog";
+import { arrayNecessidadesReconstruirLarDialog } from "./arrayNecessidadesReconstruirLarDialog";
+import { arrayNecessidadesRefeicaoQuentinhaDialog } from "./arrayNecessidadesRefeicaoQuentinhaDialog";
 
 export const arrayNecessidades = of([
     {
@@ -39,6 +38,6 @@ export const arrayNecessidades = of([
     },
     {
         description: '💊 Preciso de Medicação',
-        dialog: arrayNecessidadesPrecisoMedicacaoDialog,
+        link: 'https://api.whatsapp.com/qr/6GCOHSIAK2SJJ1?autoload=1&app_absent=0',
     },
 ])

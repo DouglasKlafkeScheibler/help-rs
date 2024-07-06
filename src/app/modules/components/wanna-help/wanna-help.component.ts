@@ -6,6 +6,7 @@ import { arrayUtilidades } from '../../../infoArrays/arrayUtilidades';
 import { arrayContato } from '../../../infoArrays/arrayContato';
 import { arrayResgate } from '../../../infoArrays/arrayResgate';
 import { arrayAjuda } from '../../../infoArrays/arrayAjuda';
+import { arrayAjudarImediato } from '../../../infoArrays/arrayAjudarImediato';
 
 @Component({
   selector: 'app-wanna-help',
@@ -23,4 +24,5 @@ export class WannaHelpComponent {
   arrayUtilidades = arrayUtilidades;
   arrayContato = arrayContato;
   arrayResgate = arrayResgate;
+  arrayAjudarImediato = arrayAjudarImediato
 }

@@ -2,6 +2,7 @@ import { of } from "rxjs";
 
 export const arrayOrientacoesMeusDireitosDialog = of([
     {
+        title: "⚖ Meus direitos",
         description: "💰 Receba Auxílio Reconstrução",
         link: 'https://www.gov.br/pt-br/servicos/receber-o-auxilio-reconstrucao',
     },
@@ -15,7 +16,7 @@ export const arrayOrientacoesMeusDireitosDialog = of([
     },
     {
         description: '🏚 Seguro de Casa de Financiamento da CAIXA',
-        link: '',
+        link: 'https://www.caixa.gov.br/Paginas/home-caixa.aspx',
     },
     {
         description: '❗ Direitos das pessoas atingidas',

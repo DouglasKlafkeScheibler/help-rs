@@ -9,12 +9,4 @@ export const arrayRodovias = of([
         description: "✅ Rotas alternativas",
         link: "https://crbm.app.br/gestao-de-rotas/index.php?class=RotaCardList",
     },
-    {
-        description: "🚌 Situação Rodoviárias",
-        link: "",
-    },
-    {
-        description: "✈ Situação Aeroportos",
-        link: "",
-    },
 ])

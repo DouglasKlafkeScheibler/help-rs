@@ -2,12 +2,12 @@ import { of } from "rxjs";
 
 export const arrayVoluntarioPresencialProfissionais = of([
     {
-        description: "🙋🏻‍♂️ Profissionais Voluntários",
-        link: "https://saude.rs.gov.br/cadastro-de-profissionais",
-    },
-    {
         description: "🩺 Voluntário Médico",
         link: "",
+    },
+    {
+        description: "🙋🏻‍♂️ Profissionais Voluntários",
+        link: "https://saude.rs.gov.br/cadastro-de-profissionais",
     },
     {
         description: "💊 Voluntário Farmacêutic",

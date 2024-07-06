@@ -1,16 +1,20 @@
 import { of } from "rxjs";
+import { arrayQueroDoarInternacionalDialog } from "./arrayQueroDoarInternacionalDialog";
+import { arrayQueroDoarPeloBrasilDialog } from "./arrayQueroDoarPeloBrasilDialog";
+import { arrayQueroDoarRSDialog } from "./arrayQueroDoarRSDialog";
 
 export const arrayQueroDoar = of([
     {
         description: "📍 Doações no RS",
-        link: "",
+        dialog: arrayQueroDoarRSDialog,
     },
     {
         description: "🇧🇷 Doações pelo Brasil",
-        link: "",
+        dialog: arrayQueroDoarPeloBrasilDialog,
     },
     {
         description: "🌐 International Donate",
-        link: "",
+        dialog: arrayQueroDoarInternacionalDialog,
+        largeButton: true
     },
 ])

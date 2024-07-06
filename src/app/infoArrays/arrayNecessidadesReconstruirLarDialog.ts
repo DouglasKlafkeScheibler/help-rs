@@ -12,7 +12,7 @@ export const arrayNecessidadesReconstruirLarDialog = of([
     },
     {
         description: '🏘 Casa de Graça Iniciativa Governo Federal',
-        link: 'link para o site/insta',
+        link: 'https://www.instagram.com/p/C7CKxHSLu3f/?img_index=1',
     },
     {
         description: '🧴🧽🧼 Limpeza das Casas',
@@ -32,6 +32,6 @@ export const arrayNecessidadesReconstruirLarDialog = of([
     },
     {
         description: '📺 Restaurando Eletrodomésticos',
-        link: 'link para o site/insta',
+        link: 'https://www.instagram.com/reel/C6wHjF6Avvz/',
     },
 ])
